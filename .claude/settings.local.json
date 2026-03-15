@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"/Users/jon/Developer/J&B Electrical Services/images/\")",
+      "Bash(ls \"/Users/jon/Developer/J&B Electrical Services/\")",
+      "Bash(ls \"/Users/jon/Developer/J&B Electrical Services/logos/\")",
+      "Bash(mv 15.jpg hero-jimmy-bw.jpg)",
+      "Bash(mv 1.jpg jimmy-work.jpg)",
+      "Bash(mv 10.jpg panel-work.jpg)",
+      "Bash(mv 3.jpg exterior-panel.jpg)",
+      "Bash(mv 2.jpg commercial-ladder.jpg)",
+      "Bash(mv 6.jpeg parking-lot-lights.jpg)",
+      "Bash(mv 4.jpg bucket-truck.jpg)",
+      "Bash(mv 11.jpg outdoor-utility.jpg)",
+      "Bash(mv 7.jpg van.jpg)"
+    ]
+  }
+}

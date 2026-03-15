@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arlington Electrician | Residential & Commercial | J&B Electrical Services</title>
+  <meta name="description" content="J&B Electrical Services — Arlington's trusted electrician for 20+ years. Residential & commercial electrical, panel upgrades, wiring, lighting. Available 24/7. No dispatch fees. Call 817-266-5499." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="J&B Electrical Services | Arlington, TX Electrician" />
+  <meta property="og:description" content="Honest, affordable, and available 24/7. Serving Arlington and the DFW Metroplex for over 20 years. No dispatch fees. Call 817-266-5499." />
+  <meta property="og:image" content="./images/van.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Schema: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "J&B Electrical Services",
+    "image": "./images/van.jpg",
+    "url": "https://jandbelectrictx.com",
+    "telephone": "+18172665499",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3705 Beverly Ln",
+      "addressLocality": "Arlington",
+      "addressRegion": "TX",
+      "postalCode": "76015",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.6882,
+      "longitude": -97.1251
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$",
+    "areaServed": ["Arlington", "Mansfield", "Midlothian", "Burleson", "Duncanville", "Venus", "Waxahachie"],
+    "description": "Family-owned electrical contractor serving the Dallas-Fort Worth area for 20+ years. Residential and commercial electrical services, panel upgrades, wiring, lighting installation.",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    /* ─── Reset & Base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    /* ─── CSS Variables ─── */
+    :root {
+      --navy:   #001C44;
+      --blue:   #0066CC;
+      --yellow: #FFCC00;
+      --white:  #ffffff;
+      --gray:   #F5F5F5;
+      --text:   #1a1a1a;
+      --muted:  #666;
+      --nav-h:  72px;
+    }
+
+    /* ─── Typography ─── */
+    h1, h2, h3, h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+    }
+    h1 { font-size: clamp(2.6rem, 6vw, 5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.3rem, 2.5vw, 1.7rem); }
+    p  { line-height: 1.7; }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Utility ─── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      border-radius: 4px;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+    .btn:active { transform: translateY(0); }
+    .btn-yellow { background: var(--yellow); color: var(--navy); }
+    .btn-yellow:hover { background: #FFD633; }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+    /* ─── NAV ─── */
+    #main-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: var(--navy);
+      height: var(--nav-h);
+      border-bottom: 3px solid var(--yellow);
+      display: flex;
+      align-items: center;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      gap: 16px;
+    }
+    .nav-logo img {
+      height: 44px;
+      display: block;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--yellow); }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+    .nav-phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: 0.04em;
+      color: var(--yellow);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .nav-phone svg { flex-shrink: 0; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 26px;
+      height: 3px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: all 0.25s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* Mobile nav drawer */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0; right: 0;
+      background: var(--navy);
+      border-bottom: 3px solid var(--yellow);
+      z-index: 999;
+      padding: 24px;
+      flex-direction: column;
+      gap: 0;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white);
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      display: block;
+      transition: color 0.15s;
+    }
+    .mobile-menu a:hover { color: var(--yellow); }
+    .mobile-menu .mobile-cta {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* ─── HERO ─── */
+    #home {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: var(--nav-h);
+      overflow: hidden;
+      background: var(--navy);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('./images/hero-jimmy-bw.jpg');
+      background-size: cover;
+      background-position: center 30%;
+      filter: grayscale(100%);
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(0, 28, 68, 0.92) 0%,
+        rgba(0, 28, 68, 0.75) 55%,
+        rgba(0, 28, 68, 0.35) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 80px 0;
+    }
+    .hero-content h1 {
+      color: var(--white);
+      margin-bottom: 20px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .hero-content h1 span { color: var(--yellow); }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      max-width: 520px;
+      font-weight: 500;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 7px 14px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .badge .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--yellow);
+      flex-shrink: 0;
+    }
+
+    /* ─── SERVICES ─── */
+    #services {
+      background: var(--gray);
+      padding: 96px 0;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .section-header h2 { color: var(--navy); }
+    .section-header p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 12px auto 0;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 32px 28px;
+      border-bottom: 4px solid transparent;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--yellow);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s;
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card:hover {
+      box-shadow: 0 12px 40px rgba(0,28,68,0.12);
+      transform: translateY(-4px);
+    }
+    .service-icon {
+      width: 52px; height: 52px;
+      background: rgba(0, 102, 204, 0.08);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .service-icon svg { width: 26px; height: 26px; stroke: var(--blue); }
+    .service-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      font-size: 1.35rem;
+    }
+    .service-card p {
+      font-size: 0.93rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .service-link {
+      display: inline-block;
+      margin-top: 14px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      transition: color 0.15s;
+    }
+    .service-link:hover { color: var(--navy); }
+
+    /* ─── REVIEWS ─── */
+    #reviews {
+      background: var(--navy);
+      padding: 96px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    #reviews::before {
+      content: '❝';
+      position: absolute;
+      top: -20px;
+      right: 5%;
+      font-size: 280px;
+      color: rgba(255, 204, 0, 0.04);
+      font-family: Georgia, serif;
+      line-height: 1;
+      pointer-events: none;
+    }
+    #reviews .section-header h2 { color: var(--white); }
+    #reviews .section-header p { color: rgba(255,255,255,0.6); }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .review-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 32px 28px;
+      position: relative;
+      transition: background 0.2s;
+    }
+    .review-card:hover { background: rgba(255,255,255,0.1); }
+    .stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 16px;
+    }
+    .stars span {
+      color: var(--yellow);
+      font-size: 1.1rem;
+    }
+    .review-text {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.75;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .review-author {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--yellow);
+    }
+    .review-city {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 2px;
+    }
+    .reviews-footer {
+      text-align: center;
+    }
+    .google-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 100px;
+      padding: 12px 24px;
+      margin-bottom: 16px;
+    }
+    .google-rating .stars { margin: 0; }
+    .google-rating-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+    .reviews-link {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      transition: opacity 0.15s;
+    }
+    .reviews-link:hover { opacity: 0.75; }
+
+    /* ─── ABOUT ─── */
+    #about {
+      background: var(--white);
+      padding: 96px 0;
+    }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-image-wrap {
+      position: relative;
+    }
+    .about-image-wrap img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4/5;
+    }
+    .about-image-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      width: 60%;
+      height: 60%;
+      border: 4px solid var(--yellow);
+      border-radius: 8px;
+      z-index: -1;
+    }
+    .about-years-badge {
+      position: absolute;
+      top: 24px;
+      right: -20px;
+      background: var(--yellow);
+      color: var(--navy);
+      border-radius: 8px;
+      padding: 16px 20px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    }
+    .about-years-badge .big-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 3rem;
+      line-height: 1;
+      display: block;
+    }
+    .about-years-badge .label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 2px;
+    }
+    .about-text h2 { color: var(--navy); margin-bottom: 20px; }
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 0.97rem;
+    }
+    .about-text p strong { color: var(--navy); }
+    .about-creds {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+    .cred-chip {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--gray);
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+    .cred-chip .check {
+      color: var(--blue);
+      font-size: 1rem;
+    }
+
+    /* ─── GALLERY ─── */
+    #work {
+      background: var(--navy);
+      padding: 96px 0;
+    }
+    #work .section-header h2 { color: var(--white); }
+    #work .section-header p { color: rgba(255,255,255,0.6); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 12px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+      min-height: 180px;
+    }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,28,68,0.85) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: flex-end;
+      padding: 16px;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px; right: 28px;
+      font-size: 2.5rem;
+      color: white;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+      opacity: 0.7;
+      transition: opacity 0.15s;
+    }
+    .lightbox-close:hover { opacity: 1; }
+
+    /* ─── SERVICE AREA + FAQ ─── */
+    #area {
+      background: var(--gray);
+      padding: 96px 0;
+    }
+    .area-faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .area-block h2 { color: var(--navy); margin-bottom: 16px; }
+    .area-block > p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+    .city-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+    .city-chip {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+    .area-note {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .faq-block h2 { color: var(--navy); margin-bottom: 24px; }
+    .faq-item {
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 18px 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.03em;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      transition: color 0.15s;
+    }
+    .faq-q:hover { color: var(--blue); }
+    .faq-q .chevron {
+      font-size: 1.2rem;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+      color: var(--yellow);
+    }
+    .faq-q.open .chevron { transform: rotate(180deg); }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-a.open { max-height: 200px; }
+    .faq-a p {
+      font-size: 0.93rem;
+      color: var(--muted);
+      padding-bottom: 18px;
+      line-height: 1.7;
+    }
+
+    /* ─── FOOTER / CONTACT ─── */
+    #contact {
+      background: var(--navy);
+      padding: 96px 0 0;
+    }
+    #contact .section-header h2 { color: var(--white); }
+    #contact .section-header p { color: rgba(255,255,255,0.65); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 64px;
+      padding-bottom: 72px;
+    }
+    .contact-form-wrap {}
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 7px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 6px;
+      padding: 13px 16px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.95rem;
+      color: var(--white);
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--yellow);
+      background: rgba(255,255,255,0.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-disclaimer {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: -8px;
+      margin-bottom: 20px;
+    }
+    .form-disclaimer span { color: var(--yellow); font-weight: 700; }
+    .contact-info h3 {
+      color: var(--white);
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 18px;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+    }
+    .contact-detail svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      stroke: var(--yellow);
+    }
+    .contact-detail a { transition: color 0.15s; }
+    .contact-detail a:hover { color: var(--yellow); }
+    .contact-phone-big {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 2rem;
+      color: var(--yellow);
+      display: block;
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
+    }
+    .contact-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin: 28px 0;
+    }
+    .contact-badges {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .contact-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.65);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .contact-badge-item .dot {
+      width: 7px; height: 7px;
+      background: var(--yellow);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── FOOTER BAR ─── */
+    .footer-bar {
+      background: rgba(0,0,0,0.35);
+      padding: 20px 0;
+      margin-top: 0;
+    }
+    .footer-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-copy {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-links a {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.15s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.7); }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .about-inner { grid-template-columns: 1fr; gap: 48px; }
+      .about-image-wrap { max-width: 400px; margin: 0 auto; }
+      .about-years-badge { right: 0; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
+      .area-faq-grid { grid-template-columns: 1fr; gap: 48px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .nav-phone .phone-text { display: none; }
+    }
+    @media (max-width: 600px) {
+      :root { --nav-h: 64px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item:nth-child(1) { grid-column: span 2; }
+      .hero-ctas { flex-direction: column; }
+      .hero-ctas .btn { text-align: center; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-bar-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════ -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="./logos/logo.jpg" alt="J&B Electrical Services" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#area">Service Area</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:8172665499" class="nav-phone" aria-label="Call J&B Electrical">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+        <span class="phone-text">817-266-5499</span>
+      </a>
+      <a href="#contact" class="btn btn-yellow">Get a Free Estimate</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#reviews" class="mobile-link">Reviews</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#work" class="mobile-link">Our Work</a>
+  <a href="#area" class="mobile-link">Service Area</a>
+  <div class="mobile-cta">
+    <a href="tel:8172665499" class="btn btn-outline" style="text-align:center;">📞 Call 817-266-5499</a>
+    <a href="#contact" class="btn btn-yellow" style="text-align:center;">Get a Free Estimate</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section id="home">
+  <div class="hero-bg" role="img" aria-label="Jimmy Humphus, owner of J&B Electrical Services, working on an electrical panel"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="section-label">Arlington's Trusted Electrician · 20+ Years</span>
+      <h1>The <span>Electrician</span><br>You Can Actually<br>Trust</h1>
+      <p class="hero-sub">Residential &amp; commercial electrical for homes and businesses across the DFW Metroplex. No dispatch fees. No scare tactics. Just honest work done right.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-yellow">Get a Free Estimate</a>
+        <a href="tel:8172665499" class="btn btn-outline">Call 817-266-5499</a>
+      </div>
+      <div class="trust-badges">
+        <div class="badge"><span class="dot"></span> 20+ Years Experience</div>
+        <div class="badge"><span class="dot"></span> Licensed &amp; Insured</div>
+        <div class="badge"><span class="dot"></span> No Dispatch Fees</div>
+        <div class="badge"><span class="dot"></span> 24/7 Emergency</div>
+        <div class="badge"><span class="dot"></span> ⭐ 4.8 Google Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">What We Do</span>
+      <h2>Electrical Services for Home &amp; Business</h2>
+      <p>No job too small, no problem too complex. We've seen it all in 20+ years across the DFW Metroplex.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="2"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="8" y1="10" x2="16" y2="10"/>
+          </svg>
+        </div>
+        <h3>Electrical Panel Upgrades</h3>
+        <p>Outdated panels are a safety hazard and an insurance problem. Jimmy has replaced hundreds across DFW — Federal Pacific, Zinsco, breaker boxes that are long past due. Done right, done to code.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3>Residential Electrical</h3>
+        <p>Outlets, switches, ceiling fans, recessed lighting, 220V appliances, water heaters, smart home devices. If it's in your home and runs on electricity, we handle it.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+          </svg>
+        </div>
+        <h3>Commercial Electrical</h3>
+        <p>Lease space wiring, LED retrofits, security and flood lighting, parking lot poles. We work around your schedule to keep your business running and your electric bill down.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>Wiring &amp; Rewiring</h3>
+        <p>Old wiring is a real risk. Whether it's a gut renovation or a targeted repair, we'll assess what you have and fix what needs fixing — no unnecessary upsells, ever.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          </svg>
+        </div>
+        <h3>Lighting Installation</h3>
+        <p>Recessed cans, ceiling fans, pendant lights, outdoor and landscape lighting, floodlights. From kitchen sinks to 40-foot commercial poles — we've done it all.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h3>24/7 Emergency Service</h3>
+        <p>Power out at 9pm on a Sunday? We answer. Available every day of the year — no inflated after-hours rates, no runaround. One call, we show up.</p>
+        <a href="tel:8172665499" class="service-link">Call now →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     REVIEWS
+═══════════════════════════════════════════ -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">What Customers Say</span>
+      <h2>Real Reviews from DFW Homeowners</h2>
+      <p>Over 80 Google reviews and counting. Here's what people say when they finally find an electrician they can trust.</p>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card reveal reveal-delay-1">
+        <div class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="review-text">"We had multiple big companies give us quotes to replace our Federal Electric Panel — they turned up the scare tactics and added $800 just for battery-powered smoke detectors. Thank God my wife found J&B. Jimmy came in and completely put us at ease. He said you don't need half the things they're telling you. Our new panel is an absolute work of art. Do not hire anyone else."</p>
+        <div class="review-author">Ryan Burt</div>
+        <div class="review-city">Arlington, TX</div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-2">
+        <div class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="review-text">"My breaker went out and left us without power. Called at 8:20pm — Jimmy came out within the hour. He communicated every step of the way, got the part first thing in the morning, and had us back up and running. His quote to replace the whole panel was better than every other one I received. He was a blessing."</p>
+        <div class="review-author">Angela Omezie</div>
+        <div class="review-city">Arlington, TX</div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-3">
+        <div class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="review-text">"Not only was Jimmy's price the best around, he was honest. He fixed the problems we had — and even reassured us that one of our 'problems' wasn't a problem at all. He didn't try to make us feel like we needed more work than we actually did. That speaks volumes. We'd definitely use J&B again."</p>
+        <div class="review-author">Kimber Daley</div>
+        <div class="review-city">Arlington, TX</div>
+      </div>
+
+    </div>
+    <div class="reviews-footer reveal">
+      <div class="google-rating">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <span class="google-rating-text">4.8 Stars on Google · 80+ Reviews</span>
+      </div>
+      <a href="https://g.page/r/jandbelectrical/review" target="_blank" rel="noopener" class="reviews-link">Read all our Google Reviews →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-image-wrap reveal">
+        <img src="./images/jimmy-work.jpg" alt="Jimmy Humphus, owner of J&B Electrical Services, working on a residential panel" />
+        <div class="about-years-badge">
+          <span class="big-num">20+</span>
+          <span class="label">Years in DFW</span>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <span class="section-label">About J&B</span>
+        <h2>Meet Jimmy — Your Electrician, Not a Call Center</h2>
+        <p>J&amp;B Electrical Services is <strong>Jimmy Humphus</strong>. When you call, you talk to Jimmy. When we show up, it's Jimmy. There are no dispatchers, no layers of staff, no surprises. Who you talk to on the phone is who walks through your door.</p>
+        <p>Jimmy has been doing residential and commercial electrical work in the Dallas-Fort Worth area for over 20 years. He started J&amp;B with a simple premise: be honest, do the work right, charge a fair price. That's still the whole business plan.</p>
+        <p><strong>We don't use scare tactics.</strong> We won't sell you work you don't need. We'll shoot you straight on what's actually required and leave your home cleaner than we found it. J&amp;B is a Christian family-owned business, and that means something to how we operate every day.</p>
+        <div class="about-creds">
+          <div class="cred-chip"><span class="check">✓</span> Licensed Electrician — TX</div>
+          <div class="cred-chip"><span class="check">✓</span> Fully Insured &amp; Bonded</div>
+          <div class="cred-chip"><span class="check">✓</span> Free Estimates</div>
+          <div class="cred-chip"><span class="check">✓</span> No Hidden Fees</div>
+          <div class="cred-chip"><span class="check">✓</span> 10% Off — First Visit</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     GALLERY
+═══════════════════════════════════════════ -->
+<section id="work">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Our Work</span>
+      <h2>Jobs We've Done Across DFW</h2>
+      <p>From panel replacements to parking lot lighting — real work by real people.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" onclick="openLightbox('./images/panel-work.jpg')">
+        <img src="./images/panel-work.jpg" alt="Electrical panel replacement work by J&B Electrical" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-label">Panel Replacement</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox('./images/exterior-panel.jpg')">
+        <img src="./images/exterior-panel.jpg" alt="Exterior panel and meter work on residential brick home" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-label">Exterior Panel Work</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox('./images/commercial-ladder.jpg')">
+        <img src="./images/commercial-ladder.jpg" alt="Commercial electrical work on ladder" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-label">Commercial Wiring</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox('./images/parking-lot-lights.jpg')">
+        <img src="./images/parking-lot-lights.jpg" alt="Parking lot pole lighting installation at golden hour" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-label">Commercial Lighting</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox('./images/bucket-truck.jpg')">
+        <img src="./images/bucket-truck.jpg" alt="Bucket truck commercial flood lighting installation" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-label">Flood Lighting</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox('./images/outdoor-utility.jpg')">
+        <img src="./images/outdoor-utility.jpg" alt="Outdoor utility pole electrical wiring" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-label">Utility Pole Wiring</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-4" onclick="openLightbox('./images/light-fixture.jpg')">
+        <img src="./images/light-fixture.jpg" alt="Interior ceiling light fixture installation" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-label">Fixture Install</span></div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-5" onclick="openLightbox('./images/van.jpg')">
+        <img src="./images/van.jpg" alt="J&B Electrical Services work van — Licensed, Insured, Bonded" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-label">Licensed · Insured · Bonded</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <img id="lightbox-img" src="" alt="Gallery photo" />
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SERVICE AREA + FAQ
+═══════════════════════════════════════════ -->
+<section id="area">
+  <div class="container">
+    <div class="area-faq-grid">
+
+      <div class="area-block reveal">
+        <span class="section-label">Where We Work</span>
+        <h2>Serving the DFW Metroplex</h2>
+        <p>Based in Arlington, TX. We cover Tarrant and Johnson County and surrounding areas — residential and commercial.</p>
+        <div class="city-chips">
+          <span class="city-chip">Arlington</span>
+          <span class="city-chip">Mansfield</span>
+          <span class="city-chip">Midlothian</span>
+          <span class="city-chip">Burleson</span>
+          <span class="city-chip">Duncanville</span>
+          <span class="city-chip">Venus</span>
+          <span class="city-chip">Waxahachie</span>
+          <span class="city-chip">Fort Worth</span>
+          <span class="city-chip">Grand Prairie</span>
+        </div>
+        <p class="area-note">Not sure if we cover your area? Call us — we'll let you know.</p>
+      </div>
+
+      <div class="faq-block reveal reveal-delay-2">
+        <span class="section-label">FAQ</span>
+        <h2>Common Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you charge a dispatch or service call fee?
+            <span class="chevron">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>No. We don't charge dispatch fees, service fees, or estimation fees. The price we quote is the price you pay for the work — nothing added on arrival.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Are you available for after-hours emergencies?
+            <span class="chevron">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes — 24 hours a day, 7 days a week, including weekends and holidays. No inflated after-hours rates. Call 817-266-5499 any time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you work on older homes?
+            <span class="chevron">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. A large part of our work is older DFW homes with Federal Pacific or Zinsco panels, outdated wiring, or code issues left by previous owners. We've seen it all.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How quickly can you come out?
+            <span class="chevron">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>Most non-emergency calls are scheduled same-day or next-day. For emergencies, we typically respond within a few hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is J&B licensed and insured?
+            <span class="chevron">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes. J&B Electrical Services is fully licensed, insured, and bonded in the State of Texas. We carry all required credentials for residential and commercial electrical work.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you do commercial work?
+            <span class="chevron">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes. We handle lease space wiring, LED retrofits, outdoor and security lighting, parking lot poles, and more for small businesses throughout the Metroplex.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER / CONTACT
+═══════════════════════════════════════════ -->
+<footer id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Get In Touch</span>
+      <h2>Request a Free Estimate</h2>
+      <p>No obligation. No hidden fees. We'll get back to you fast — usually the same day.</p>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-form-wrap reveal">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden><input name="bot-field" /></p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="first_name" placeholder="Jimmy" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="last_name" placeholder="Smith" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="(817) 555-0100" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Describe the work needed</label>
+            <textarea id="message" name="message" placeholder="e.g. Panel upgrade, outlet repair, ceiling fan install..."></textarea>
+          </div>
+          <p class="form-disclaimer"><span>First-time customers receive 10% off.</span> No dispatch fees, no service fees, no obligation.</p>
+          <button type="submit" class="btn btn-yellow" style="width:100%;font-size:1.1rem;padding:16px;">Request My Free Estimate</button>
+        </form>
+      </div>
+
+      <div class="contact-info reveal reveal-delay-2">
+        <h3>Reach Us Directly</h3>
+
+        <div class="contact-detail">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+          <div>
+            <a href="tel:8172665499" class="contact-phone-big">817-266-5499</a>
+            <span style="font-size:0.85rem;color:rgba(255,255,255,0.5);">Available 24 hours · 7 days a week</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <div>J&amp;B Electrical Services</div>
+            <div>3705 Beverly Ln</div>
+            <div>Arlington, TX 76015</div>
+          </div>
+        </div>
+
+        <hr class="contact-divider" />
+
+        <div class="contact-badges">
+          <div class="contact-badge-item"><span class="dot"></span> Licensed Electrician — State of Texas</div>
+          <div class="contact-badge-item"><span class="dot"></span> Fully Insured &amp; Bonded</div>
+          <div class="contact-badge-item"><span class="dot"></span> No Dispatch Fees · No Hidden Charges</div>
+          <div class="contact-badge-item"><span class="dot"></span> Free Estimates on All Jobs</div>
+          <div class="contact-badge-item"><span class="dot"></span> Christian Family-Owned Business</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <div class="footer-bar-inner">
+      <span class="footer-copy">© 2026 J&amp;B Electrical Services · Arlington, TX · All rights reserved</span>
+      <div class="footer-links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/sitemap.xml">Sitemap</a>
+        <a href="tel:8172665499">817-266-5499</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════ -->
+<script>
+  // ── Hamburger menu ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.mobile-link, .mobile-cta a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    });
+  });
+
+  // ── Lightbox ──
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  // ── FAQ accordion ──
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.classList.remove('open');
+      q.nextElementSibling.classList.remove('open');
+    });
+
+    // Open clicked if it was closed
+    if (!isOpen) {
+      btn.classList.add('open');
+      answer.classList.add('open');
+    }
+  }
+
+  // ── Scroll reveal ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── Active nav link on scroll ──
+  const sections = document.querySelectorAll('section[id], footer[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.style.color = link.getAttribute('href') === `#${current}` ? 'var(--yellow)' : '';
+    });
+  });
+</script>
+
+</body>
+</html>
