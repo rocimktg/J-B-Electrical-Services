@@ -206,16 +206,16 @@
       display: none;
       position: fixed;
       top: var(--nav-h);
-      left: 0; right: 0;
+      left: 0; right: 0; bottom: 0;
       background: var(--navy);
-      border-bottom: 3px solid var(--yellow);
       z-index: 999;
       padding: 24px;
       flex-direction: column;
       gap: 0;
+      overflow-y: auto;
     }
     .mobile-menu.open { display: flex; }
-    .mobile-menu a {
+    .mobile-menu a:not(.btn) {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700;
       font-size: 1.2rem;
@@ -925,7 +925,8 @@
       .contact-grid { grid-template-columns: 1fr; gap: 48px; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .nav-phone .phone-text { display: none; }
+      .nav-phone { display: none; }
+      .nav-right .btn-yellow { display: none; }
     }
     @media (max-width: 600px) {
       :root { --nav-h: 64px; }
